@@ -2,9 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>{% block title %}Chris-Jay Mabalot Portfolio{% endblock %}</title>
+    <title>
+        {% block title %}
+        Chris-Jay Mabalot Portfolio
+        {% endblock %}
+    </title>
   </head>
   <body>
-    <main>{% block content %} {% endblock %}</main>
+    {% include 'navbar.html' %}
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
   </body>
 </html>
