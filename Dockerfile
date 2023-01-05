@@ -10,3 +10,10 @@ COPY manage.py ./manage.py
 COPY portfolio ./portfolio
 
 EXPOSE 8000
+
+FROM production as development
+
+COPY Requirements/development.txt ./Requirements/development.txt
+RUN pip install -r ./Requirements/development.txt
+
+COPY . . 
