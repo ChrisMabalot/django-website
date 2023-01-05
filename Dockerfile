@@ -7,6 +7,7 @@ COPY Requirements/production.txt ./Requirements/production.txt
 RUN pip install -r ./Requirements/production.txt
 
 COPY manage.py ./manage.py
+COPY setup.cfg ./setup.cfg
 COPY portfolio ./portfolio
 
 EXPOSE 8000
