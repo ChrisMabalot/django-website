@@ -7,6 +7,10 @@ x-database-variables: &database-variables
   POSTGRES_USER: postgres
   POSTGRES_PASSWORD: postgres
 
+x-app-variables: &app-variables
+  <<: *database-variables
+  POSTGRES_HOST: postgres
+
 services:
   website:
     image: website-portfolio:latest
