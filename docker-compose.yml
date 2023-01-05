@@ -1,7 +1,11 @@
 version: "3.8"
 
 x-services-volumes: &service-volumes
-  - ./:/app/:rw,cached
+
+x-database-variables: &database-variables
+  POSTGRES_DB: postgres
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
 
 services:
   website:
@@ -10,3 +14,8 @@ services:
     volumes: *service-volumes
     ports:
       - "8000:8000"
+
+  postgres:
+    image: postgres
+    ports:
+      - "5432:5432"
