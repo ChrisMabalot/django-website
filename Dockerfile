@@ -8,3 +8,5 @@ RUN pip install -r ./Requirements/production.txt
 
 COPY manage.py ./manage.py
 COPY portfolio ./portfolio
+
+EXPOSE 8000
