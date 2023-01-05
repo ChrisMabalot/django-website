@@ -1,6 +1,7 @@
 version: "3.8"
 
 x-services-volumes: &service-volumes
+  - ./:/app/:rw,cached
 
 x-database-variables: &database-variables
   POSTGRES_DB: postgres
@@ -16,6 +17,7 @@ services:
     image: website-portfolio:latest
     command: python3 manage.py runserver 0.0.0.0:8000
     volumes: *service-volumes
+    environment: *app-variables
     ports:
       - "8000:8000"
 
@@ -24,3 +26,8 @@ services:
     ports:
       - "5432:5432"
     environment: *database-variables
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
