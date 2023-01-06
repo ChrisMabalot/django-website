@@ -494,6 +494,11 @@ section {
   border-radius: 0;
 }
 
+.skills .text {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
 .skills .progress .skill {
   padding: 10px 0;
   margin: 0;
