@@ -1,10 +1,13 @@
+/**
+* Template Name: MyResume - v4.10.0
+* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-html {
-  background-color: black;
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -39,7 +42,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #031c33;
+  background: #0563bb;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -73,7 +76,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: rgb(0, 0, 0);
+  background: #fff;
 }
 
 #preloader:before {
@@ -82,8 +85,8 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #0563bb;
-  border-top-color: rgb(0, 0, 0);
-  border-bottom-color: rgb(0, 0, 0);
+  border-top-color: #fff;
+  border-bottom-color: #fff;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -132,21 +135,20 @@ h6 {
   transition: all 0.5s;
   padding: 15px;
   overflow-y: auto;
-  background-color: #000000;
 }
 
 @media (max-width: 991px) {
   #header {
     width: 300px;
-    background: rgb(0, 0, 0);
-    border-right: 1px solid #000000;
+    background: #fff;
+    border-right: 1px solid #e6e9ec;
     left: -300px;
   }
 }
 
 @media (min-width: 991px) {
   #main {
-    margin-left: 85px;
+    margin-left: 100px;
   }
 }
 
@@ -157,7 +159,6 @@ h6 {
 * Desktop Navigation 
 */
 .nav-menu {
-  background-color: #000000;
   padding: 0;
   display: block;
 }
@@ -183,7 +184,7 @@ h6 {
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #2d2b2b;
+  background: #f2f3f5;
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -210,7 +211,7 @@ h6 {
   .nav-menu a span,
   .nav-menu a:focus span {
     display: none;
-    color: rgb(0, 0, 0);
+    color: #fff;
   }
 }
 
@@ -219,7 +220,7 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover > a {
   color: #fff;
-  background: #031c33;
+  background: #0563bb;
 }
 
 .nav-menu a:hover span,
@@ -272,8 +273,8 @@ h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle {
-  color: rgb(0, 0, 0);
-  background-color: #031c33;
+  color: #fff;
+  background-color: #0563bb;
 }
 
 /*--------------------------------------------------------------
@@ -295,7 +296,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -308,11 +309,11 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #ffffff;
+  color: #45505b;
 }
 
 #hero p {
-  color: #ffffff;
+  color: #45505b;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -377,7 +378,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #cbcbcb;
+  color: #45505b;
 }
 
 .section-title h2::before {
@@ -404,26 +405,20 @@ section {
 
 .section-title p {
   margin-bottom: 0;
-  color: #cbcbcb;
 }
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-
-.about {
-  background-color: #000000;
-}
-
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #345679;
+  color: #728394;
 }
 
 .about .content ul {
   list-style: none;
   padding: 0;
-  color: #cbcbcb;
 }
 
 .about .content ul li {
@@ -439,7 +434,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #345679;
+  color: #0563bb;
   line-height: 0;
 }
 
@@ -492,10 +487,6 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skills {
-  background-color: #000000;
-}
-
 .skills .progress {
   height: 60px;
   display: block;
@@ -537,9 +528,6 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-.resume {
-  background-color: black;
-}
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -601,10 +589,6 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio {
-  background-color: black;
-}
-
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -1198,7 +1182,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #000000;
+  background: #f7f8f9;
   color: #45505b;
   font-size: 14px;
   text-align: center;
