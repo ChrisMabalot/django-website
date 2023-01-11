@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Chris-Jay Mabalot Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'theme/assets/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'theme/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'theme/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'theme/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'theme/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'theme/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'theme/assets/css/style.css' %}" rel="stylesheet">
+
+    <title>
+        {% block title %}
+        Chris-Jay Mabalot Portfolio
+        {% endblock %}
+    </title>
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <!-- <main> -->
+    {% block content %}
+    {% endblock %}
+    <!-- </main> -->
+
+        <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Chris-Jay Mabalot</h3>
+      <p>If you have any questions or would like to discuss potential opportunities further, please don't hesitate to contact me via email or LinkedIn.<br>My GitHub account is also available for review.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/chris-jaymabalot/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Chris-Jay Mabalot</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'theme/assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+    <script src="{% static 'theme/assets/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'theme/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'theme/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'theme/assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'theme/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'theme/assets/vendor/typed.js/typed.min.js' %}"></script>
+    <script src="{% static 'theme/assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'theme/assets/js/main.js' %}"></script>
+  </body>
+</html>
