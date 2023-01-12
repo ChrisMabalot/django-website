@@ -14,6 +14,7 @@ import os
 
 from pathlib import Path
 from dotenv import load_dotenv, find_dotenv
+from django.core.management.utils import get_random_secret_key 
 
 dotenv_path = find_dotenv()
 load_dotenv(dotenv_path)
@@ -27,7 +28,7 @@ PROJECT_DIR = os.path.join(BASE_DIR, "portfolio")
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
+SECRET_KEY = get_random_secret_key() # os.environ["DJANGO_SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
